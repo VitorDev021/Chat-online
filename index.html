@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Informacoes - Chat Online</title>
+		<link rel="icon" href="#" type="x-icon">		
+	
+		<style scoped>
+		
+		* {
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+		
+		body {
+			width: 100vw;
+			height: auto;
+			background: white;
+			color: black;
+			font-family: "Arial";
+			position: relative;
+		}
+		
+		/* BOLAS */
+		
+		.bola-one {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: #FE6363;
+			margin-right: 15px;
+		}
+		
+		.bola-two {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: #FC9256;
+			margin-right: 15px;
+		}
+		
+		.bola-tree {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: #6BD6A6;
+		}
+		
+		/* SECTION ( INFORMATION )*/
+		
+		.container {
+			width: 100vw;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0px 0px 30px 0px;
+		}
+		
+		.information {
+			width: 95%;
+			height: auto;
+			border-radius: 0px 0px 20px 20px;
+			background: linear-gradient(180deg, #010B6A, #03066B, #2231AE,  #B34DD7, #CC5FE1);
+			color: white;
+			display: flex;
+			justify-content: center;
+			padding: 0px 0px 45px 0px;
+		}
+		
+		.janela-info {
+			width: 75%;
+			height: 75%;
+			background: white;
+			border-radius: 10px;
+			margin-top: 35px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px 0px 15px 0px;
+			box-shadow: 0px 0px 10px 1px #232323;
+		}
+		
+		.janela-bolas {
+			width: 100%;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			padding-left: 20px;
+			background: #222742;
+			border-radius: 8px 8px 0px 0px;
+		}
+		
+		.janela-info h1 {
+			margin-top: 15px;
+			color: #222742;
+			font-size: 22px;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+		}
+		
+		.janela-info h1, .janela-info ul{
+			padding: 0px 20px 0px 20px;
+		}
+		
+		.janela-info ul {
+			width: 100%;
+		}
+		
+		.janela-info ul li {
+			list-style: none;
+			color: #222742;
+			margin: 20px 0px 0px 0px;
+		}
+		
+		.janela-info ul li h2 {
+			font-size: 19px;
+			margin: 0px;
+		}
+		
+		.janela-info ul li p {
+			font-size: 15px;
+			margin: 3px 0px 0px 0px;
+		}
+		
+		/*------------------
+					CONTENT
+		------------------*/
+		
+		.content {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px 0px 20px 20px;
+			
+		}
+		
+		.content h2 {
+			font-size: 24px;
+			font-weight: 850;
+			color: #5150E3;
+			margin: 25px 0px 10px 0px;
+			letter-spacing: 0.7px;
+		}
+		
+		.content p {
+			font-size: 16.5px;
+			font-weight: 400;
+			letter-spacing: 0.4px;
+			width: 90%;
+		}
+		
+		.content ul {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin: 10px 0px 30px 0px;
+		}
+		
+		.content ul li {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			list-style: none;
+			padding: 10px 0px 10px 0px;
+		}
+		
+		.content ul li ion-icon {
+			margin: 0px 10px 0px 0px;
+			font-size: 30px;
+			color: #5150E3;
+		}
+		
+		.content ul li p {
+			font-size: 15px;
+			width: 85%;
+		}
+		
+		.content button {
+			width: 90%;
+			height: 45px;
+			background: #5150E3;
+			color: white;
+			border: none;
+			border-radius: 15px;
+			outline: none;
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			transform: translateX(-50%);
+			cursor: pointer;
+		}
+		
+		.content button:hover {
+			box-shadow: 0px 0px 10px 5px #5150E3;
+			text-shadow: 0px 0px 10px white;
+			transition: all .3s ease-in-out;
+		}
+		
+		
+		</style>
+	
+	</head>
+	
+	<!----------------------------------
+									HTML
+	----------------------------------->
+	
+	<body>
+		
+		<main class="container">
+		
+		
+			<!---------------------
+							HEADER
+			---------------------->
+			<section class="information">
+			
+				<div class="janela-info">
+					<div class="janela-bolas">
+						<div class="bola-one"></div>
+						<div class="bola-two"></div>
+						<div class="bola-tree"></div>
+					</div>
+					<h1>Informaçoes</h1>
+					
+					<ul>
+					
+						<li>
+							<h2>Mensagens</h2>
+							<p>E aceito qualquer tipo de mensagem, desde que voce seja o mais claro possivel na fala e nao use nenhuma linguagem errada (ex: Palavras de baixo calao e emojis +18 )</p>
+						</li>
+						
+						<li>
+							<h2>Chat Online</h2>
+							<p>Ele usa um sistema de armazenamento que demora 5 a 10 minutos para enviar a mensagem ao <strong>chat online</strong>. Esse tempo e devido a verificaçao de certos conteudos e palavras em sua mensagem, feita pela a nossa Inteligencia Artificial.</p>
+						</li>
+						
+					</ul>
+					
+				</div>
+				
+			</section>
+	
+	
+			<!---------------------
+						 CONTENT
+			---------------------->
+			<section class="content">
+				
+				<h2>Bem Vindo ao Chat Online</h2>
+				<p>Obrigado por acessar o nosso site de conversa e entretenimento</p>
+				
+				<ul>
+					<li>
+						<ion-icon name="checkmark-circle"></ion-icon>
+						<p>Troque informaçoes com seus amigos e desconhecidos, sendo totalmente seguro e <strong>Anonimo</strong></p>
+					</li>
+					
+					<li>
+						<ion-icon name="checkmark-circle"></ion-icon>
+						<p>Acesse o perfil do usuario que voce deseja conversar para saber suas caracteristicas.</p>
+					</li>
+					
+					<li>
+						<ion-icon name="checkmark-circle"></ion-icon>
+						<p>Divirta-se com seus bate-papos naturais e diferenciais</p>
+					</li>
+				</ul>
+				
+				<button onclick="openChat()">Chat Online</button>
+				
+			</section>
+	
+		</main>
+		
+	</body>
+	
+		<!---------------------------
+							JAVASCRIPT
+		---------------------------->
+	
+	<script>
+		
+		function openChat() {
+			window.location.href = "./chat.html";
+		}
+		
+	</script>
+	
+	
+	
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>	
+				
+</html>
